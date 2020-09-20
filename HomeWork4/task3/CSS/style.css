@@ -1,0 +1,15 @@
+ul{
+    width: 350px;
+}
+li{
+    font-size: 10px;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    width: 100px;
+    background-color: rgb(219, 212, 212);
+    text-align: center;
+    padding: 7px 0 7px 0;
+}
+li:nth-child(4n+3){
+    background-color: rgb(132, 240, 99);
+}

@@ -1,0 +1,89 @@
+.container{
+    width: 1000px;
+    height: auto;
+    background-color:red;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.MyCnt{
+    width: 1100px;
+
+}
+
+header{
+    background-color: #afd1af;
+    height: 10vh;
+    line-height: 10vh;
+    padding: 0 0 0 10px;
+    font-size: 18px;
+
+}
+nav{
+    background-color: #67be65;
+    height: 8vh;
+    line-height: 8vh;
+    padding: 0 0 0 10px;
+    font-size: 18px;
+}
+#sidebar, #content, aside{
+    height: 70vh;
+    padding: 0 0 0 10px;
+    margin: 0px;
+    float: left;
+    
+}
+#sidebar{
+    width: 200px;
+    background-color: #5a92d8;
+}
+#content{
+    width: 530px;
+    background-color: #96b4da;
+    display: inline-block;
+    padding-left: 50px;
+    overflow-y: auto;
+}
+aside{
+    width: 200px;
+    background-color: #5a92d8;
+    display: inline-block;
+    float: none;
+}
+footer{
+    height: 10vh;
+    background-color: #afd1af;
+    line-height: 10vh;
+    padding-left: 20px;
+}
+a{ font-size: 18px;
+    display: inline;
+    text-align: left;
+    line-height: 1.2em;
+    padding-left: 0;
+}
+div{
+    line-height: 0.9em;
+    font-size: 20px;
+    
+}
+h3{
+    margin: 0;
+    font-size: 25px;
+    text-decoration: underline;
+}
+.box{
+    height: 150px;
+    font-size: 24px;
+    font-weight: 600;
+}
+p{
+    margin: 10px 0 40px 0px;
+}
+ul{
+    padding: 15px;
+}
+li{
+    list-style-type: none;
+}

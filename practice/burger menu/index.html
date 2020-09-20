@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Borger menu</title>
+</head>
+<body>
+    <div class="menu-icon-wriper">
+        <div class="menu-icon menu-icon-active"></div>
+    </div>
+    <div class="menu-icon-wriper">
+        
+    </div>
+    <div class="menu-arrow">
+        <div class="arrow-icon "></div>
+    </div>
+
+
+    <script>
+        document.querySelector('.menu-icon-wriper').onclick = function()
+        {
+            document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
+        }
+        // document.querySelector('.menu-arrow').onclick = function()
+        // {
+        //     document.querySelector('.arrow-icon').classList.toggle('menu-arrow-active');
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body{
+    background: #F6F7FA;
+}
+
+article{
+    display: grid;
+    gap: 64px 24px;
+    grid-template-columns: 660px 660px;
+    grid-template-rows: repeat(5,185px);
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section{
+border-radius: 16px;
+display: grid;
+grid-template-columns: 3fr 2fr;
+}
+
+.dark__theme{
+    background: linear-gradient(90.02deg, #25335A 0.02%, #141824 113.01%);
+    color:#FFFFFF;
+}
+
+.light__theme{
+    background: #FFFFFF;
+    color: #AD4328;
+}
+
+.description{
+    margin-left: 40px;
+    margin-top: 72px;
+    width: 280px;
+}
+
+.imagePutDown{
+    margin-top: 15px;
+}
+
+p{
+    font-size: 24px;
+    line-height: 33px;
+    margin: 0;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 0;
+}

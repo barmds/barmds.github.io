@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        th{
+            background-color: rgba(0, 195, 255, 0.658);
+            width: 200px;
+            border: 1px solid grey;
+        }
+        td{
+            border: 1px solid grey;
+        }
+        table{
+            
+            border: 1px solid grey;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <form action="aplication.php" method="GET">
+    <table>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Value
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td>
+                <input type="text" size="25">
+            </td>
+        </tr>
+        <tr>
+           <td>
+               Sex
+           </td>
+           <td>
+               <input type="radio" name="Gender" value="Male"> Male <br>
+               <input type="radio" name="Gender" value="Female" > Female
+           </td>
+        </tr>
+        <tr>
+            <td>
+                Check all that apply
+            </td>
+            <td>
+                <input type="checkbox" name="apl">Over 6 feet tall<br>
+                <input type="checkbox" name="apl">Over 200 pounds
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Eye color
+            </td>
+            <td>
+                <select size="1" name="EyeColor">
+                    <option value="green">green</option>
+                    <option value="grey">grey</option>
+                    <option value="blue">blue</option>
+                    <option value="black">black</option>
+                    <option value="brown">brown</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Describe your atletic ability:<br>
+                <textarea name="AtletycAbiliti" cols="55" rows="10" ></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button style="text-align: center;">Enter my information</button>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

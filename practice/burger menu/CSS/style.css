@@ -1,0 +1,146 @@
+body{
+    margin: 0px;
+    background-color: #1e88e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ~~~~~~  MENU-CROSS  ~~~~~~~~ */
+
+
+.menu-icon-wriper{
+    /* background-color: red; */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-icon{
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+}
+.menu-icon::before{
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s ;
+}
+.menu-icon::after{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s ;
+}
+
+.menu-icon.menu-icon-active{
+    background-color: transparent;
+}
+.menu-icon.menu-icon-active::before{
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+.menu-icon.menu-icon-active::after{
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+
+/* ~~~~~~  MENU-ARROW  ~~~~~~~~ */
+
+.menu-arrow{
+    /* background-color: red; */
+    /* border: #fff solid 1px; */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-icon{
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+    transition: all  ease-in 0.2s;
+}
+.arrow-icon::before{
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    /* transition: transform 0.2s ease-in, top 0.2s linear 0.2s ; */
+    transition: all  ease-in 0.2s;
+}
+.arrow-icon::after{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    /* transition: transform 0.2s ease-in, top 0.2s linear 0.2s ; */
+    transition: all  ease-in 0.2s;
+}
+
+.arrow-icon:hover{
+    background-color: transparent;
+    transition: all  linear 0.2s;
+}
+.arrow-icon:hover::before{
+    width: 24px;
+    transform-origin: top left ;
+    transform: rotate(45deg);
+    transition: all  ease-in 0.2s;
+}
+.arrow-icon:hover::after{
+    transform-origin: top left ;
+    transform: rotate(-45deg);
+    width: 24px;
+    top: 7.5px;
+    left: 13.5px;
+    transition: all  ease-in 0.2s;
+}
+
+
+
+/* .arrow-icon.menu-arrow-active{
+    background-color: transparent;
+    transition: all  linear 0.2s;
+}
+.arrow-icon.menu-arrow-active::before{
+    width: 24px;
+    transform-origin: top left ;
+    transform: rotate(45deg);
+    transition: all  ease-in 0.2s;
+}
+.arrow-icon.menu-arrow-active::after{
+    transform-origin: top left ;
+    transform: rotate(-45deg);
+    width: 24px;
+    top: 7.5px;
+    left: 13.5px;
+    transition: all  ease-in 0.2s;
+} */

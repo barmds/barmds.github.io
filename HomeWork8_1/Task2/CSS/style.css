@@ -1,4 +1,4 @@
-.rectangel{
+.rectangle{
     position: relative;
     margin: 25% auto;
     padding: auto;
@@ -11,7 +11,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-.rectangel2{
+.rectangle2{
     /* position: absolute;
     left: 25%;
     top: 25%; */

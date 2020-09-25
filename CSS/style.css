@@ -103,7 +103,7 @@
         margin: 0;
         font-size: 50px;
         text-align: center;
-        width: 100%;
+        
     }
     .practice{
         justify-content: center;
@@ -129,6 +129,7 @@ article{
 section, .NameLesson{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: white;
     min-height: 50px;
     border: grey solid 1px;

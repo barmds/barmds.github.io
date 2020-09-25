@@ -71,5 +71,13 @@
         <a href="practice/HomeWork15/Task_2/index.html" title="JS Number and String">Task 2</a>
         <a href="practice/HomeWork15/Task_3/index.html" title="JS Number and String">Task 3</a>
     </li>
+    <li>
+        <h3>Practice for lesson 16 (JS Array)</h3>
+        <a href="practice/HomeWork16/Task_1/index.html" title="JS Array">Task 1</a>
+        <a href="practice/HomeWork16/Task_2/index.html" title="JS Array">Task 2</a>
+        <a href="practice/HomeWork16/Task_3/index.html" title="JS Array">Task 3</a>
+        <a href="practice/HomeWork16/Task_4/index.html" title="JS Array">Task 4</a>
+        <a href="practice/HomeWork16/Task_5/index.html" title="JS Array">Task 5</a>
+    </li>
 
 </ul>

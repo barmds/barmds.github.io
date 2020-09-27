@@ -14,3 +14,8 @@ else
         alert("result<0")
     }
 }
+
+var a = 1;
+var n;
+n = (a>0) ? true : false;
+console.log(n);

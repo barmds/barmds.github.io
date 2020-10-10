@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice for lesson 19</title>
+</head>
+<style>
+    .text{
+        color: red;
+    }
+</style>
+<body>
+    <input type="checkbox" >
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ul>
+    <script >
+        document.getElementsByTagName("input")[0].setAttribute ("checked","checked");
+        let names = document.getElementsByTagName("li");
+        for (let i=0; i<names.length; i++)
+            names[i].classList.toggle ("text")
+    </script>
+</body>
+</html>

@@ -1,6 +1,7 @@
-// Task 1 (string without vowels)
+// Task 1 (Disemvowel Trolls)
+
 function disemvowel(str) {
-    let setStr = 'eyuioaEYUIOA';
+    let setStr = 'euioaEUIOA';
     let getStr = '';
    
     for (let i=0; i<str.length; i++){
@@ -12,7 +13,8 @@ function disemvowel(str) {
   }
  console.log(disemvowel('This website is for losers LOL!'));
 
-//   Task 2(Count the number of Duplicates)
+//   Task 2(Counting Duplicates)
+
 function duplicateCount(text){
     let fStr = ''; sStr = '';
     text = text.toLowerCase();
@@ -30,7 +32,7 @@ function duplicateCount(text){
 }
 console.log(duplicateCount('aaabbbbbatryertyetrsdfg'));
 
-// Task 3 (You might know some pretty large perfect squares. But what about the NEXT one?)
+// Task 3 (Find the next perfect square!)
 
 function findNextSquare(sq) {
     let f=Math.sqrt(sq)
@@ -266,3 +268,114 @@ snail = function(array) {
 }
 console.log(snail([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
 
+// Task 16 (Stop gninnipS My sdroW!)
+
+function spinWords(spinStr){
+  spinStr = spinStr.split(" ");
+  for (let i=0; i<spinStr.length; i++)
+    if (spinStr[i].length>4)
+      spinStr[i] = spinStr[i].split("").reverse().join("");
+  return spinStr.join(" ");
+}
+console.log(spinWords("Hey fellow warriors"))
+
+// Task 17 (Find the odd int)
+
+function findOdd(A) {
+  let check = 0;
+  for (let i=0; i<A.length; i++){
+    for (let j=0; j<A.length; j++)
+      if(A[i] == A[j])
+        check++;
+    if ((check % 2) !=0){
+      return A[i];
+    }
+  }
+}
+console.log(findOdd([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]));
+
+// Task 18 (Two to One)
+
+function longest(s1, s2) {
+  s1 = s1.split("");
+  s2 = s2.split("");
+  s3 = [];
+  for (let i=0; i<s1.length; i++)
+    if (s3.indexOf(s1[i]) == -1)
+      s3.push(s1[i]);
+  for (let i=0; i<s2.length; i++)
+  if (s3.indexOf(s2[i]) == -1)
+      s3.push(s2[i]);
+return s3.sort().join("");
+}
+console.log(longest("aretheyhere", "yestheyarehere"));
+
+// Task 19 (Jaden Casing Strings)
+
+// String.prototype.toJadenCase = function () {
+//   let result = this;
+//   if (this.length !== 0) {
+//     result = this.split(" ").map(function(word) {
+//       return word.substring(0, 1).toUpperCase() + word.substring(1);
+//     }).join(" ");
+//   }
+
+//   return result;
+// };
+
+// Task 20 (Find the missing letter)
+
+function findMissingLetter(array)
+{
+  for (let i=0; i<array.length-1; i++)
+    if ((array[i+1].charCodeAt() - array[i].charCodeAt()) == 2)
+      return  String.fromCharCode(array[i].charCodeAt()+1)
+}
+console.log (findMissingLetter(['O','Q','R','S']))
+
+// Task 21 (Who likes it?)
+
+function likes(names) {
+  switch (names.length){
+    case 0 : return "no one likes this";
+    case 1 : return (names[0] + " likes this");
+    case 2 : return (names[0] + " and " + names[1] + " like this");
+    case 3 : return (names[0]+", "+names[1]+" and "+names[2]+" like this");
+    default: {
+      let n = names.length-2;
+      let str = names[0]+", "+names[1]+" and "+ n +" others like this";
+      return (str);
+    }
+  }
+}
+console.log(likes(['Alex', 'Jacob']))
+
+// Task 22 (Who likes it?)
+
+function deleteNth(arr,n){
+  let getArr= [], cnt;
+  
+  for (let i=0; i<arr.length; i++){
+    cnt = 0;
+    for (let j=0; j<getArr.length; j++){
+      if (arr[i] == getArr[j])
+        cnt++;
+    }
+    if (cnt < n)
+      getArr.push(arr[i]);
+    
+  }
+  return getArr
+}
+console.log(deleteNth([1,1,3,3,7,2,2,2,2], 3))
+
+// Task 23 (Persistent Bugger.)
+
+function persistence(num) {
+  while (num.toString().length = 1){
+    let pr=1;
+    for (let i=0; i<num.toString().length; i++){
+      pr*=num[i];
+    }
+  }
+}

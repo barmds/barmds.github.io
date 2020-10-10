@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice for lesson 19</title>
+</head>
+<body>
+    <div>Technology</div>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+    <script >
+        let nodes = document.body.children;
+        for(let i=0; i<nodes.length; i++){
+            if (nodes[i].nodeName == "UL"){
+                console.log(nodes[i].nodeName)
+                let children = nodes[i].children;
+                let cnt =0;
+                for (let j=0; j<children.length; j++)
+                    if (children[i].nodeName == "LI"){
+                        if (cnt==1)
+                        console.log(children[i].innerHTML)
+                        cnt++;
+                    }
+            }
+        }
+        console.log(nodes)
+    </script>
+</body>
+</html>

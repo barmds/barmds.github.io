@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice for lesson 21</title>
+</head>
+
+<body>
+
+    <script>
+        const requestURL = 'https://jsonplaceholder.typicode.com/users';
+        function sendRequest(method, url, body=null) {
+            const headers = {
+                'Content-Type': 'application/json'
+            }
+
+            return fetch(url, {
+                method: method,
+                body: JSON.stringify(body),
+                headers: headers
+            }).then(response =>{
+                return response.json()
+            })
+        }        
+
+// sendRequest('GET', requestURL)
+//     .then(data=>console.log(data))
+//     .catch(err=> console.log(err))
+
+const body = {name:'Vladlen', age:26}
+
+
+sendRequest('POST', requestURL, body)
+    .then(data=>console.log(data))
+    .catch(err=> console.log(err))
+
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

@@ -6,16 +6,15 @@
     <title>Practice for lesson 19</title>
 </head>
 <body>
-    <ul id="list"></ul>
-      
-      <script>
 
-      
-        let liFirst = document.createElement('li');
-        liFirst.innerHTML = 'first';
-        list.prepend(liFirst); 
-
-        
-      
-      </script>
+  <ul id="list"></ul>
+</body>
+<script>
+  let liFirst;
+  for (let i=1; i<=5; i++){
+    liFirst = document.createElement('li');
+    liFirst.innerHTML = i;
+    list.append(liFirst);
+  }
+</script>
 </html>

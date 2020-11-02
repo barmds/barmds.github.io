@@ -1,10 +1,8 @@
 let myArray = new Array;
-let i=0;
 do {
     b = prompt ('Input element of Array number ', i);
     if ( b!=null ) {
-        myArray[i] = b;
-        i++;
+        myArray.push(b);
     }
 } while (b!=null);
 console.log(myArray);

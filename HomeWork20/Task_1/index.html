@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Task1, lesson 20</title>
+</head>
+<body>
+    <div id="content">
+        <div id="ball"></div>
+    </div>
+
+    <script>
+    content.onclick = function(event) {
+        let d = document.getElementById("ball");
+        d.style.left = event.clientX - 15 +"px";
+        d.style.top = event.clientY - 15+ "px";
+    }
+</script>
+</body>
+</html>

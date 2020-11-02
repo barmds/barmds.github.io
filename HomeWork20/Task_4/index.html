@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Task 4 lesson 20</title>
+</head>
+<body>
+
+<header>
+  <span>Hello World</span>
+</header>
+      <article>
+        <h2>Tasks</h2>
+        <section>
+          <h3>Задание 1</h3>
+          <span>При прокрутке страницы на 200px тоглить класс в header</span>
+          <h3>Задание 2</h3>
+          <span>Сделать проверку на ширину экрана, если меньше 768px то к элементу 
+            добавить класс</span>
+            <h3>Задание 3</h3>
+          <span>Cделать интуп (type = "text") в который можно вводить только цифры 
+            (keyCode для чисел от 48 до 57 и от 96 до 105)</span>
+            <input type="text" name="myInput" id="myInput" class="number">
+        </section>
+        <h2>Lorem, ipsum dolor.</h2>
+        <section>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo, accusamus blanditiis in corrupti deserunt eaque, iure fugiat reiciendis ut unde facilis consectetur qui corporis vitae, architecto mollitia dolorum illo quam animi quasi? Molestiae eos optio reiciendis porro tempore. Sapiente blanditiis necessitatibus placeat unde harum voluptatem totam omnis, recusandae quas.
+        </section>
+        <h2>Lorem, ipsum.</h2>
+        <section>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo, accusamus blanditiis in corrupti deserunt eaque, iure fugiat reiciendis ut unde facilis consectetur qui corporis vitae, architecto mollitia dolorum illo quam animi quasi? Molestiae eos optio reiciendis porro tempore. Sapiente blanditiis necessitatibus placeat unde harum voluptatem totam omnis, recusandae quas.
+        </section>
+        <h2>Lorem, ipsum dolor.</h2>
+        <section>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo, accusamus blanditiis in corrupti deserunt eaque, iure fugiat reiciendis ut unde facilis consectetur qui corporis vitae, architecto mollitia dolorum illo quam animi quasi? Molestiae eos optio reiciendis porro tempore. Sapiente blanditiis necessitatibus placeat unde harum voluptatem totam omnis, recusandae quas.
+        </section>
+        <h2>Lorem, ipsum dolor.</h2>
+        <section>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo, accusamus blanditiis in corrupti deserunt eaque, iure fugiat reiciendis ut unde facilis consectetur qui corporis vitae, architecto mollitia dolorum illo quam animi quasi? Molestiae eos optio reiciendis porro tempore. Sapiente blanditiis necessitatibus placeat unde harum voluptatem totam omnis, recusandae quas.
+        </section>
+        <h2>Lorem, ipsum dolor.</h2>
+        <section>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo, accusamus blanditiis in corrupti deserunt eaque, iure fugiat reiciendis ut unde facilis consectetur qui corporis vitae, architecto mollitia dolorum illo quam animi quasi? Molestiae eos optio reiciendis porro tempore. Sapiente blanditiis necessitatibus placeat unde harum voluptatem totam omnis, recusandae quas.
+        </section>
+        <h2>Lorem, ipsum dolor.</h2>
+        <section>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo, accusamus blanditiis in corrupti deserunt eaque, iure fugiat reiciendis ut unde facilis consectetur qui corporis vitae, architecto mollitia dolorum illo quam animi quasi? Molestiae eos optio reiciendis porro tempore. Sapiente blanditiis necessitatibus placeat unde harum voluptatem totam omnis, recusandae quas.
+        </section>
+        <h2>Lorem, ipsum dolor.</h2>
+        <section>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo, accusamus blanditiis in corrupti deserunt eaque, iure fugiat reiciendis ut unde facilis consectetur qui corporis vitae, architecto mollitia dolorum illo quam animi quasi? Molestiae eos optio reiciendis porro tempore. Sapiente blanditiis necessitatibus placeat unde harum voluptatem totam omnis, recusandae quas.
+        </section>
+        <h2>Lorem, ipsum dolor.</h2>
+        <section>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo, accusamus blanditiis in corrupti deserunt eaque, iure fugiat reiciendis ut unde facilis consectetur qui corporis vitae, architecto mollitia dolorum illo quam animi quasi? Molestiae eos optio reiciendis porro tempore. Sapiente blanditiis necessitatibus placeat unde harum voluptatem totam omnis, recusandae quas.
+        </section>
+      </article>
+
+<script>
+  let d = document.getElementsByTagName("header");
+  window.addEventListener('scroll', function(e) {
+    
+    if (this.scrollY>200)
+      d[0].classList.add("addHeder");
+      else
+      d[0].classList.remove("addHeder");
+});
+window.addEventListener('resize', function() {
+  if(this.innerWidth < 768)
+  d[0].classList.add("windowSize");
+      else
+      d[0].classList.remove("windowSize");
+//  console.log(this.innerWidth); 
+});
+
+let keyChars = document.getElementById("myInput") 
+function keyEven(even){
+  if (
+      ((even.keyCode < 48) || (even.keyCode > 57)) 
+    ) 
+      return even.preventDefault() 
+}
+
+keyChars.addEventListener('keypress', keyEven);
+
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice for lesson 21</title>
+</head>
+
+<body>
+
+    <script>
+        const requestURL = 'https://jsonplaceholder.typicode.com/users';
+        function sendRequest(method, url, body=null) {
+            return new Promise((resolve, reject) => {
+                const xhr = new XMLHttpRequest();
+                xhr.open(method, url);
+                xhr.responseType = 'json';
+                xhr.setRequestHeader('Content-Type','application/json');
+                xhr.onload = () => {
+                    if (xhr.status >= 400) {
+                        reject.error(xhr.response)
+                    } else {
+                        resolve(xhr.response)
+                    }
+
+                    xhr.onerror = () => {
+                        console.log(xhr.response)
+                    }
+
+                }
+                xhr.send(JSON.stringify(body));
+            })
+        }
+
+// sendRequest('GET', requestURL)
+//     .then(data=>console.log(data))
+//     .catch(err=> console.log(err))
+const body = {name:'Vladlen', age:26}
+sendRequest('POST', requestURL, body)
+    .then(data=>console.log(data))
+    .catch(err=> console.log(err))
+
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

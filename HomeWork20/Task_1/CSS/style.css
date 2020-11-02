@@ -1,0 +1,20 @@
+:root{
+    --radius:30px;
+}
+#content{
+    width: 99vw;
+    height: 98vh;
+    margin: 0px;
+    padding: 0;
+    background-color: #ecf4f3;
+}
+#ball{
+    position: absolute;
+    width: var(--radius);
+    height: var(--radius);
+    background-color: #68b0ab;
+    border-radius: 50%;
+    border: 1px solid grey;
+    top: var(--radius);
+    left: var(--radius);
+}

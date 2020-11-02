@@ -1,0 +1,19 @@
+table{
+  margin: auto;
+  border: 3px solid black;
+}
+tr{
+  height: 50px;
+}
+td{
+  width: 250px;
+  border: 1px solid grey;
+  text-align: center;
+}
+/* td:hover{
+  background-color: #00FFFF;
+} */
+.tdHover{
+  background-color: #00fafa;
+  transition-duration: 0.7s;
+}
